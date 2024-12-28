@@ -26,7 +26,7 @@ The Birthday Card App allows users to create custom birthday cards with personal
 
 1. Clone the repository:
    ```bash
-   [git clone https://github.com/your-username/birthday-card-app.git](https://github.com/AlsonAfrica/Gallery-Suite.git)
+   [[git clone https://github.com/your-username/birthday-card-app.git](https://github.com/AlsonAfrica/Gallery-Suite.git)](https://github.com/AlsonAfrica/BirthdayCard24.git)
 
 2. Install the required dependencies:
 
