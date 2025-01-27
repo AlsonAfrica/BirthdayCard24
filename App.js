@@ -1,16 +1,18 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import CreateCardScreen from './screens/CreateCardScreen';
-import ViewCardScreen from './screens/ViewCardScreen';
+import HomeScreen from './screens/HomeScreens';
+import CreateCardScreen from './screens/CreateCardScreens';
+import SavedCardsScreen from './screens/SavedCardScreens';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="CreateCard">
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="CreateCard" component={CreateCardScreen} />
-        <Stack.Screen name="ViewCard" component={ViewCardScreen} />
+        <Stack.Screen name="SavedCards" component={SavedCardsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
