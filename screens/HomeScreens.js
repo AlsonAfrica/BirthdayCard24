@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Dimensions, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import icon from "../assets/splash.png";
+import icon2 from '../assets/fireworks.png';
 
 export default function HomeScreen({ navigation }) {
   // Animation values
@@ -55,7 +56,7 @@ export default function HomeScreen({ navigation }) {
       ]}>
         <View style={styles.logoContainer}>
           <Image
-            source={icon}
+            source={icon || icon2}
             style={styles.logo}
             resizeMode="contain"
           />
