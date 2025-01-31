@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Dimensions, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import icon from "../assets/splash.png";
-import icon2 from '../assets/fireworks.png';
 import { Platform } from 'react-native';
 
 export default function HomeScreen({ navigation }) {
@@ -59,7 +58,7 @@ export default function HomeScreen({ navigation }) {
           <Image
             source={Platform.select({
               ios: icon,
-              android: icon2
+              android: icon
             })}
             style={styles.logo}
             resizeMode="contain"
