@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Image, Dimensions, Animated }
 import { LinearGradient } from 'expo-linear-gradient';
 import icon from "../assets/splash.png";
 import icon2 from '../assets/fireworks.png';
+import { Platform } from 'react-native';
 
 export default function HomeScreen({ navigation }) {
   // Animation values
@@ -56,12 +57,14 @@ export default function HomeScreen({ navigation }) {
       ]}>
         <View style={styles.logoContainer}>
           <Image
-            source={icon || icon2}
+            source={Platform.select({
+              ios: icon,
+              android: icon2
+            })}
             style={styles.logo}
             resizeMode="contain"
           />
         </View>
-        
         <Text style={styles.title}>Birthday Card Maker</Text>
         <Text style={styles.subtitle}>Create memorable wishes</Text>
 
